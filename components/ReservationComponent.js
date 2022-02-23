@@ -14,16 +14,11 @@ class Reservation extends Component {
       hikeIn: false,
       date: new Date(),
       showCalendar: false,
-      showModal: false
     };
   }
 
   static navigationOptions = {
     title: 'Reserve Campsite'
-  }
-
-  toggleModal() {
-    this.setState({showModal: !this.state.showModal});
   }
 
   handleReservation() {
@@ -58,7 +53,6 @@ class Reservation extends Component {
       hikeIn: false,
       date: new Date(),
       showCalendar: false,
-      showModal: false
     });
   }
 
@@ -155,22 +149,6 @@ const styles = StyleSheet.create({
   formItem: {
     flex: 1
   },
-  modal: { 
-    justifyContent: 'center',
-    margin: 20
-  },
-  modalTitle: {
-    fontSize: 24,
-    fontWeight: 'bold',
-    backgroundColor: '#5637DD',
-    textAlign: 'center',
-    color: '#fff',
-    marginBottom: 20
-  },
-  modalText: {
-    fontSize: 18,
-    margin: 10
-  }
 });
 
 export default Reservation;
